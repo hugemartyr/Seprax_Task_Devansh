@@ -75,3 +75,11 @@ body {
 .styled-button:hover {
   background-color: #3b5c31; /* Darker shade of green */
 }
+
+
+.shapes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between shapes */
+}

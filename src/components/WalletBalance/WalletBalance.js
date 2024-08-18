@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 
-const SepoliaBalance = () => {
+const WalletBalance = () => {
     const [account, setAccount] = useState(null);
     const [balance, setBalance] = useState('0');
     const [web3, setWeb3] = useState(null);
@@ -38,7 +38,7 @@ const SepoliaBalance = () => {
 
     return (
         <div style={{ padding: '20px', backgroundColor: '#f4f4f4', color: '#333' }}>
-            <h2 style={{ color: '#556b2f' }}>Wallent Balance</h2>
+            <h2 style={{ color: '#556b2f' }}>Wallet Balance</h2>
             {account ? (
                 <div>
                     <p><strong>Account:</strong> {account}</p>
@@ -51,4 +51,4 @@ const SepoliaBalance = () => {
     );
 };
 
-export default SepoliaBalance;
+export default WalletBalance;

@@ -31,7 +31,7 @@ const GetTokenBalance = () => {
         <>
             <button className="connect-button" onClick={fetchPrice}> Click Me </button>
             <br></br>
-            <div className="emphasized-text">
+            <div style={{ padding: '20px', backgroundColor: '#f4f4f4', color: '#333' }} className="emphasized-text">
                 <p><span className="token-name">Price of ETH:</span> <span className="token-value">{ETH}</span></p>
                 <p><span className="token-name">Price of MATIC:</span> <span className="token-value">{MATIC}</span></p>
                 <p><span className="token-name">Price of LINK:</span> <span className="token-value">{LINK}</span></p>

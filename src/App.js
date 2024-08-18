@@ -5,9 +5,9 @@ import ConnectWallet1 from './components/ConnectWallet/ConnectWallet1';
 import TokenWatchlist from './components/TokenWatchlist/Tokenwatchlist';
 // import TokenBalanceViewer from './components/TokenBalanceViewer/TokenBalanceViewer';
 import SimpleTransfer from './components/SimpleTransfer/SimpleTransfer';
-import SepoliaBalance from './components/WalletBalance/WalletBalance';
 import { usdPrice, getEthPriceInUSD } from './components/GetTokenBalance/GetTokenBalance';
 import GetTokenBalance from './components/GetTokenBalance/GetTokenBalance';
+import WalletBalance from './components/WalletBalance/WalletBalance';
 
 
 function App() {
@@ -21,13 +21,21 @@ function App() {
   // }
   return (
     <div className="App">
-      {/* <Body/> */}
+
+
+      
+
+
+
+
+
+      <Body />
       {/* <ConnectWallet1 /> */}
       {/* <TokenBalanceViewer/> */}
 
-      <SepoliaBalance />
-      {/* <TokenWatchlist /> */} 
-      <GetTokenBalance/>
+      <WalletBalance />
+      <TokenWatchlist />
+      <GetTokenBalance />
 
       {/* <button onClick={fetchPrice}> Click Me </button> */}
       {/* <SimpleTransfer /> */}
