@@ -45,8 +45,8 @@ const TokenWatchlist = () => {
                 fetchWatchlist(contract, account);
 
 
-                const a = await contract.methods.balanceOf(account).call();
-                console.log(a);
+                // const a = await contract.methods.balanceOf(account).call();
+                // console.log(a);
 
             } catch (error) {
                 console.error("Error adding token to watchlist:", error);

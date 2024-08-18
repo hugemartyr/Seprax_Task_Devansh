@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="App">
 
-      <h1 className="heading">My Crypto Portfolio</h1>
       <svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <circle cx="50" cy="50" r="40" />
       </svg>
@@ -36,7 +35,7 @@ function App() {
         <rect width="100" height="10" />
       </svg>
 
-
+      <h1 className="heading">My Crypto Portfolio</h1>
 
 
 
@@ -47,9 +46,9 @@ function App() {
       <WalletBalance />
       <TokenWatchlist />
       <GetTokenBalance />
-      <TokenGraphsandCards/>
+      {/* <TokenGraphsandCards/> */}
         {/* <button onClick={fetchPrice}> Click Me </button> */}
-        {/* <SimpleTransfer /> */}
+        <SimpleTransfer />
     </div>
   );
 }
