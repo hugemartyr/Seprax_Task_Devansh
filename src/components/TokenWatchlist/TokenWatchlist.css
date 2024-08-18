@@ -1,0 +1,15 @@
+.remove-button{
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: #4f7942; /* Soft green */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.remove-button:hover{
+    background-color: #3b5c31; /* Darker shade of green */
+}

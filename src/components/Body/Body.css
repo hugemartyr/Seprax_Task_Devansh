@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #9eca98; /* Beige background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50px;   
+  left: 200px;  
+}
+
+.shapes {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.circle {
+  fill: #4f7942; /* Soft green */
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triangle {
+  fill: #4f7942; /* Soft green */
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.line {
+  fill: #4f7942; /* Soft green */
+  opacity: 0.3;
+  width: 200px;
+  height: 10px;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.heading {
+  color: #4f7942; /* Soft green */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.styled-button {
+  background-color: #4f7942; /* Soft green */
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #3b5c31; /* Darker shade of green */
+}
