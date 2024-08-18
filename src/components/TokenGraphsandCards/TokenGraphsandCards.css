@@ -1,0 +1,40 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .token-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .token-card {
+    width: 30%;
+    min-width: 250px;
+    background-color: #E6E6D8; /* Lighter beige for card background */
+    border: 1px solid #BDB76B; /* Olive border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .token-card h2 {
+    color: #556B2F; /* Dark olive green */
+    margin-bottom: 10px;
+  }
+  
+  .token-card p {
+    color: #6B8E23; /* Olive green for price */
+    font-size: 1.2em;
+  }
+  
+  .chart {
+    margin-top: 15px;
+  }
+  

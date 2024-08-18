@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usdPrice, getEthPriceInUSD } from "./GetTokenBalance.jsx";
 import "./GetTokenBalance.css"
+import SimpleTransfer from "../SimpleTransfer/SimpleTransfer.js";
 
 const GetTokenBalance = () => {
 
@@ -38,6 +39,8 @@ const GetTokenBalance = () => {
                 <p><span className="token-name">Price of AAVE:</span> <span className="token-value">{AAVE}</span></p>
                 <p><span className="token-name">Price of UNI:</span> <span className="token-value">{UNI}</span></p>
             </div>
+
+            <SimpleTransfer />
         </>
     );
 
