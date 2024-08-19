@@ -1,0 +1,54 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5DC; /* Beige background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .token-history-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #556B2F; /* Dark olive green */
+    margin-bottom: 20px;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #BDB76B; /* Olive border */
+    background-color: #E6E6D8; /* Lighter beige */
+    color: #556B2F;
+  }
+  
+  .date-picker-container {
+    margin-top: 20px;
+  }
+  
+  .date-picker-container label {
+    color: #556B2F;
+    margin-right: 10px;
+  }
+  
+  .date-picker-container input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #BDB76B; /* Olive border */
+    background-color: #E6E6D8; /* Lighter beige */
+    color: #556B2F;
+    margin-right: 20px;
+  }
+  
+  .chart-container {
+    margin-top: 30px;
+    background-color: #E6E6D8; /* Lighter beige for card background */
+    border: 1px solid #BDB76B; /* Olive border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

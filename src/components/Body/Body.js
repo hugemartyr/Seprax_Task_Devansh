@@ -4,7 +4,7 @@ import './Body.css';
 
 const Body = () => {
   return (
-    <div className="container">
+    <div className="shapes-container">
       <div className="shapes">
         {/* Minimalistic Shapes */}
         <svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">

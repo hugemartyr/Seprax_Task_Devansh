@@ -9,6 +9,8 @@ import { usdPrice, getEthPriceInUSD } from './components/GetTokenBalance/GetToke
 import GetTokenBalance from './components/GetTokenBalance/GetTokenBalance';
 import WalletBalance from './components/WalletBalance/WalletBalance';
 import TokenGraphsandCards from './components/TokenGraphsandCards/TokenGraphsandCards';
+import HistoricalData from './components/TokenHistory/TokenHistory';
+import TokenHistory from './components/TokenHistory/TokenHistory';
 
 
 function App() {
@@ -46,9 +48,11 @@ function App() {
       <WalletBalance />
       <TokenWatchlist />
       <GetTokenBalance />
+      {/* <HistoricalData/> */}
       {/* <TokenGraphsandCards/> */}
-        {/* <button onClick={fetchPrice}> Click Me </button> */}
-        <SimpleTransfer />
+      {/* <button onClick={fetchPrice}> Click Me </button> */}
+      {/* <SimpleTransfer /> */}
+      {/* <TokenHistory/> */}
     </div>
   );
 }
