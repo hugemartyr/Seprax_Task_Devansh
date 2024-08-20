@@ -3,7 +3,7 @@ import Web3 from 'web3';
 import SimpleTransferABI from './SimpleTransferABI.json'; // Import ABI
 import './SimpleTransfer.css'; // Create this CSS file for styling
 import "../../App.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const SimpleTransfer = () => {
     const [account, setAccount] = useState(null);
@@ -19,7 +19,7 @@ const SimpleTransfer = () => {
             setWeb3(web3Instance);
             const contractInstance = new web3Instance.eth.Contract(
                 SimpleTransferABI,
-                '0x75a2165c030CF9Bdc3C60E8aB87251557583141F' // Replace with your deployed contract address
+                '0x9e940683A95D955D261A66559008cb6D6c7edeb8' // Replace with your deployed contract address
             );
             setContract(contractInstance);
         } else {
@@ -50,12 +50,13 @@ const SimpleTransfer = () => {
                 //         value: _value.toString(),
 
                 //     });
-                await contract.methods.transferEther(recipientAddress).send({ from: account, value: _value.toString() });
+                const txn = await contract.methods.transferEther(recipientAddress).send({ from: account, value: _value.toString() });
+                console.log("The Transaction Hash is : ", txn.transactionHash);
 
-                setMessage('Transfer successful!');
+                setMessage("Transfer successful! ");
             } catch (error) {
                 console.error("Error during transfer:", error);
-                setMessage('Transfer failed!');
+                setMessage(`Transfer failed! `);
             }
         }
     };
@@ -85,7 +86,7 @@ const SimpleTransfer = () => {
                     {message && <p className="message">{message}</p>}
                 </div>
             )}
-                               <Link to="/" className="nav-button">Go Back to Home</Link>
+            <Link to="/" className="nav-button">Go Back to Home</Link>
 
         </div>
     );
