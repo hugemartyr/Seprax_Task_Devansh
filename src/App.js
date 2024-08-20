@@ -1,60 +1,83 @@
 import React, { useEffect } from 'react';
-import Body from './components/Body/Body';
-import ConnectWallet from './components/ConnectWallet/ConnectWallet';
+import Body from './components/Body(main)/Body';
+
 import ConnectWallet1 from './components/ConnectWallet/ConnectWallet1';
 import TokenWatchlist from './components/TokenWatchlist/Tokenwatchlist';
-// import TokenBalanceViewer from './components/TokenBalanceViewer/TokenBalanceViewer';
+import TokenBalanceViewer from './components/TokenWatchlist(discard)/TokenBalanceViewer';
 import SimpleTransfer from './components/SimpleTransfer/SimpleTransfer';
 import { usdPrice, getEthPriceInUSD } from './components/GetTokenBalance/GetTokenBalance';
 import GetTokenBalance from './components/GetTokenBalance/GetTokenBalance';
 import WalletBalance from './components/WalletBalance/WalletBalance';
-import TokenGraphsandCards from './components/TokenGraphsandCards/TokenGraphsandCards';
+import TokenGraphsandCards from './components/TokenGraphsandCards(discard)/TokenGraphsandCards';
 import HistoricalData from './components/TokenHistory/TokenHistory';
 import TokenHistory from './components/TokenHistory/TokenHistory';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TokenWatchlist1 from './components/TokenWatchlist/TokenWatchlist1';
+import CryptoDashboard from './components/CryptoDashboard/CryptoDashboard';
+
 
 function App() {
+  document.title = "MyCryptoPortfolio";
 
-  // let a;
-
-  // async function fetchPrice() {
-  //   await getEthPriceInUSD();
-  //   a = usdPrice;
-  //   console.log(a);
-  // }
   return (
-    <div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/TokenHistory" element={<TokenHistory />} />
+        <Route path="/WalletBalance" element={<WalletBalance />} />
+        <Route path="/SimpleTransfer" element={<SimpleTransfer />} />
+        <Route path="/ConnectWallet1" element={<ConnectWallet1 />} />
+        <Route path="/TokenBalanceViewer" element={<TokenBalanceViewer />} />
+        <Route path="/TokenWatchlist" element={<TokenWatchlist />} />
+        <Route path="/HistoricalData" element={<HistoricalData />} />
+        <Route path="/GetTokenBalance" element={<GetTokenBalance />} />
+        <Route path="/CryptoDashboard" element={<CryptoDashboard />} />
 
-      {/* <svg className="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="40" />
-      </svg>
+        <Route path="/SimpleTransfer" element={<SimpleTransfer />} />
+        <Route path="/TokenWatchlist1" element={<TokenWatchlist1 />} />
+        <Route path="" element={<Body />} />
 
-      <svg className="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <polygon points="50,15 90,85 10,85" />
-      </svg>
-
-      <svg className="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
-        <rect width="100" height="10" />
-      </svg>
-
-      <h1 className="heading">My Crypto Portfolio</h1> */}
-
-
-
-      {/* <Body /> */}
-      {/* <ConnectWallet1 /> */}
-      {/* <TokenBalanceViewer/> */}
-
-      <WalletBalance />
-      <TokenWatchlist />
-      <GetTokenBalance />
-      {/* <HistoricalData/> */}
-      {/* <TokenGraphsandCards/> */}
-      {/* <button onClick={fetchPrice}> Click Me </button> */}
-      <SimpleTransfer />
-      <TokenHistory />
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App() {
+
+
+//   return (
+
+//     <div>
+
+
+//       <Body />
+//       <ConnectWallet1 />
+//       <TokenBalanceViewer/> 
+
+//       <WalletBalance />
+//       <TokenWatchlist />
+//       <GetTokenBalance />
+//       <HistoricalData />
+//       <TokenGraphsandCards />
+
+//       <SimpleTransfer />
+//       <TokenHistory />
+//     </div>
+//   );
+// }
 
 export default App;

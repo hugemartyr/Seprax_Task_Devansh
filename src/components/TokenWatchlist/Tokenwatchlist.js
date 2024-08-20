@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import TokenWatchlistABI from './TokenWatchlistABI.json'; // Import ABI
 import './TokenWatchlist.css';
+import "../../App.css"
+import {Link} from "react-router-dom"
 
 const TokenWatchlist = () => {
     const [account, setAccount] = useState(null);
@@ -122,6 +124,7 @@ const TokenWatchlist = () => {
                     </ul>
                 </div>
             )}
+                   <Link to="/" className="nav-button">Go Back to Home</Link>
         </div>
     );
 };

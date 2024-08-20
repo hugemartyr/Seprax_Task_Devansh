@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usdPrice, getEthPriceInUSD } from "./GetTokenBalance.jsx";
 import "./GetTokenBalance.css"
+import "../../App.css"
 
 const GetTokenBalance = () => {
 

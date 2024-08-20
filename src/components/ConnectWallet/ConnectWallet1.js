@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import SimpleStorageABI from './SimpleStorageABI.json'; // Import ABI
 import './ConnectWallet.css';
+import "../../App.css"
 
 const ConnectWallet1 = () => {
   const [account, setAccount] = useState(null);

@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './TokenHistory.css';
+import "../../App.css"
+import { Link } from 'react-router-dom';
 
 const TokenHistory = () => {
   const [selectedToken, setSelectedToken] = useState('ETH');
@@ -72,6 +74,9 @@ const TokenHistory = () => {
     ],
   };
 
+
+
+  
   return (
     <div className="token-history-container">
       <h1>Select a Token</h1>
@@ -109,6 +114,7 @@ const TokenHistory = () => {
           <Line data={data} />
         </div>
       )}
+       <Link to="/" className="nav-button">Go Back to Home</Link>
     </div>
   );
 };

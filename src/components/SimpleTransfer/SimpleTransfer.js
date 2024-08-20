@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import SimpleTransferABI from './SimpleTransferABI.json'; // Import ABI
 import './SimpleTransfer.css'; // Create this CSS file for styling
+import "../../App.css"
+import {Link} from "react-router-dom"
 
 const SimpleTransfer = () => {
     const [account, setAccount] = useState(null);
@@ -17,7 +19,7 @@ const SimpleTransfer = () => {
             setWeb3(web3Instance);
             const contractInstance = new web3Instance.eth.Contract(
                 SimpleTransferABI,
-                '0x9e940683A95D955D261A66559008cb6D6c7edeb8' // Replace with your deployed contract address
+                '0x75a2165c030CF9Bdc3C60E8aB87251557583141F' // Replace with your deployed contract address
             );
             setContract(contractInstance);
         } else {
@@ -83,8 +85,13 @@ const SimpleTransfer = () => {
                     {message && <p className="message">{message}</p>}
                 </div>
             )}
+                               <Link to="/" className="nav-button">Go Back to Home</Link>
+
         </div>
     );
 };
 
 export default SimpleTransfer;
+
+
+//Original contract : 0x9e940683A95D955D261A66559008cb6D6c7edeb8

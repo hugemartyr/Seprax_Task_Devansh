@@ -1,6 +1,8 @@
 import React from 'react';
 import './Body.css';
-
+import WalletBalance from '../WalletBalance/WalletBalance';
+import { Link } from 'react-router-dom';
+import "../../App.css"
 
 const Body = () => {
   return (
@@ -22,6 +24,16 @@ const Body = () => {
       </div>
 
       <h1 className="heading">My Crypto Portfolio</h1>
+
+      <WalletBalance/>
+
+      <div className="button-container">
+        <Link to="/TokenHistory" className="nav-button">Token History</Link>
+        <Link to="/TokenWatchlist" className="nav-button"> List </Link>
+        <Link to="/SimpleTransfer" className="nav-button">Token Transfer</Link>
+        <Link to="/CryptoDashboard" className="nav-button">Token Dashboard </Link>
+        
+      </div>
       
     </div>
   );

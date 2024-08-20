@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import TokenWatchlistABI from './TokenWatchlistABI.json'; // Import ABI
 // import './TokenWatchlist.css';
+import "../../App.css"
 
 const TokenWatchlist = () => {
   const [account, setAccount] = useState(null);

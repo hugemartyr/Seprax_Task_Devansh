@@ -75,3 +75,29 @@ body {
 .styled-button:hover {
   background-color: #3b5c31; /* Darker shade of green */
 }
+
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #4CAF50; /* Green */
+  font-size: 20px;
+  border: 2px solid #BDB76B; /* Olive border */
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #E6E6D8; /* Lighter beige */
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #556B2F;
+  color: #F5F5DC; /* Beige */
+}
